@@ -15,7 +15,11 @@ chars2 = " !#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNÑOPQRSTUVWXYZ[\\]^_`abc
 letras = "abcdefghijklmnopqrstuvwxyz"
 nums = "234567890"
 numcode = ['22', '222', '2222', '33', '333', '3333', '44', '444', '4444', '55', '555', '5555', '66', '666', '6666', '77', '777', '7777', '77777', '88', '888', '8888', '99', '999', '9999', '99999']
-def isPrime(inputnum):
+def isPrime(inputnum:int)->bool:
+	"""
+	isPrime(inputnum:int)->bool
+	check if number is prime
+	"""
 	if inputnum < 2:
 		return False
 	for i in range(2,inputnum-1):
@@ -24,7 +28,11 @@ def isPrime(inputnum):
 			break
 	else :
 	    return True
-def getrndPrime(limit):
+def getrndPrime(limit:int)->int:
+	"""
+	getrndPrime(limit:int)->int
+	generate prime random with argumen limit
+	"""
 	#un buen primo es aquel que de 20191231 en un dataset
 	modnum = int(str(limit)[-4:])
 	num1 = randint(0,limit) % modnum

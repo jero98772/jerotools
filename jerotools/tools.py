@@ -303,7 +303,11 @@ def htmlInit(name,content):
 	</body>
 </html>
 	"""
-def htmltxt(txtp,txtq,id,who):
+def htmltxt(txtp:str,txtq:str,id:str,who:str)->str:
+	"""
+	htmltxt(txtp:str,txtq:str,id:str,who:str)->str
+	generate html code for a blog entry in B-feelLog
+	"""
 	now = time.ctime()
 	return f"""
 <div id="{id}">
@@ -320,3 +324,11 @@ def htmltxt(txtp,txtq,id,who):
 </div>
 <hr>
 """
+
+def readRealtime(name:str,sep=";":str):
+  """
+  readRealtime(name:str,sep=";":str)) , is a genteretor return row of csv at iteration 
+  """
+  with open(name, 'r') as file:
+    for i in file.readlines():
+      yield i.split(sep)
