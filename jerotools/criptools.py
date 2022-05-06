@@ -43,9 +43,17 @@ def getrndPrime(limit:int)->int:
 		if isPrime(i):
 			return i
 			break
-def rndkey():
+def rndkey()->int:
+	"""
+	rndkey()->int
+	gen random int ,2**20
+	"""
 	return  randint(0,2**20)
-def unpad(s):
+def unpad(s)->str:
+	"""
+	#last character len(s) - 1 ==s[-1]
+	unpad AES output
+	"""
 	return s[:-ord(s[len(s) - 1:])]
 def pad(s):
 	size = 16
