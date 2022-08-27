@@ -25,6 +25,9 @@ some functios have their docstring
 
 - [web](https://github.com/jero98772/jerotools/blob/main/jerotools/teleTools.py)
 
+### install
+
+		python setup.py install
 
 ### what functions are in there?
 
