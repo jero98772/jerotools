@@ -332,3 +332,20 @@ def readRealtime(name:str,sep=";":str):
   with open(name, 'r') as file:
     for i in file.readlines():
       yield i.split(sep)
+
+def writeFiles(header:str,actualdir=os.getcwd():str):
+	"""
+	writeFiles(header:str,actualdir=os.getcwd():str)
+	modify existing python and html files, adding a header
+	"""
+	paths=os.listdir(actualdir)
+	for i in paths: 
+		if os.path.isdir(actualdir+i):
+			writeFiles(header,actualdir+i+"/")
+		if ".py" in i:
+			content=readtxtstr(actualdir+i)
+			write('#!/usr/bin/env python\n# -*- coding: utf-8 -*-"\n"""\n'+header+'\n"""\n'+content,actualdir+i,"w")
+		if ".html" in i:
+			content=readtxtstr(actualdir+i)
+			write('<!--\n'+header+'\n-->\n'+content,actualdir+i,"w")
+#https://github.com/jero98772/arreBatEro/blob/main/UTOOLS/write_headers.py	
