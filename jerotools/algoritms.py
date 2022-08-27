@@ -1,3 +1,9 @@
+#!/usr/bin/env python 
+# -*- coding: utf-8 -*-"
+"""
+jerotools - 2022 - por jero98772
+jerotools - 2022 - by jero98772
+"""
 def dfs(matriz, x, y):
   matriz[x][y]  = 0  
   n, m = len(matriz), len(matriz[0])

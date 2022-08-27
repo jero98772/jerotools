@@ -1,3 +1,9 @@
+#!/usr/bin/env python 
+# -*- coding: utf-8 -*-"
+"""
+jerotools - 2022 - por jero98772
+jerotools - 2022 - by jero98772
+"""
 import cv2
 import matplotlib.image as mpi
 import matplotlib.pyplot as plt

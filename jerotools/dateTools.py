@@ -1,3 +1,9 @@
+#!/usr/bin/env python 
+# -*- coding: utf-8 -*-"
+"""
+jerotools - 2022 - por jero98772
+jerotools - 2022 - by jero98772
+"""
 def fechaStr2Arr(fecha):
 	"""
 	fechaStr2Arr(<date as string>) , return date as array
