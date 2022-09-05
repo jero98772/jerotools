@@ -103,7 +103,7 @@ def pixelar(imagen):
 	img = np.zeros((height,width,3),dtype=int)
 	for i in range(altojump,height):
 		for j in range(anchojump,width):
-			color = promedio_para_img(i,j,i+altojump,j+anchojump,imagen)
+			color = meanImage(i,j,i+altojump,j+anchojump,imagen)
 			for x in range(i,i+altojump+1):
 				for c in range(j,j+anchojump+1):
 					img[x][c] = color
