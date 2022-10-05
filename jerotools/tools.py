@@ -167,7 +167,7 @@ def readtxt(name):
 	readtxt(name) , return txt content as array ,element by line 
 	"""
 	content = []
-	with open(name+".txt", 'r') as file:
+	with open(name, 'r') as file:
 		for i in file.readlines():
 			content.append(str(i).replace("\n",""))
 	return content
@@ -185,7 +185,7 @@ def readtxtstr(name):
 	readtxtstr(name) , return txt content as string
 	"""
 	content = ""
-	with open(name+".txt", 'r') as file:
+	with open(name, 'r') as file:
 		for i in file.readlines():
 			content += str(i).replace("\n","")
 	return content
@@ -203,7 +203,7 @@ def writetxt(name,content):
 	writetxt(name,content) , write in txt file something  
 	"""
 	content =str(content)
-	with open(name+".txt", 'w') as file:
+	with open(name, 'w') as file:
 		file.write(content)
 		file.close()
 def yesno(msg):
