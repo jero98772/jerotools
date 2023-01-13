@@ -19,7 +19,9 @@ some functios have their docstring
 
 - [date](https://github.com/jero98772/jerotools/blob/main/jerotools/dateTools.py)
 
-- [data base](https://github.com/jero98772/jerotools/blob/main/jerotools/criptools.py)
+- [criptografy](https://github.com/jero98772/jerotools/blob/main/jerotools/criptools.py)
+
+- [data base](https://github.com/jero98772/jerotools/blob/main/jerotools/dbtools.py)
 
 - [image](https://github.com/jero98772/jerotools/blob/main/jerotools/imgTool.py)
 
